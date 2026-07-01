@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicación 4 - Array, Set y Map</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #581c87, #6b21a8);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+  a.back {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #6b21a8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  a.back:hover { text-decoration: underline; }
+  h1 {
+    color: #581c87;
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+  p.desc {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  button {
+    flex: 1 1 auto;
+    min-width: 160px;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #6b21a8;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  button:hover { background: #581c87; }
+  #resultado {
+    background: #faf5ff;
+    border: 1px dashed #6b21a8;
+    border-radius: 10px;
+    padding: 16px;
+    min-height: 50px;
+    font-family: 'Consolas', monospace;
+    color: #581c87;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="../index.html">&larr; Volver al inicio</a>
+    <h1>Aplicación 4: Array → Set → Map 🔄</h1>
+    <p class="desc">Se crea un array inicial. Transformarlo a un Set, transformarlo en un Map e imprimir el Map resultante.</p>
+    <div class="buttons">
+      <button id="btnASet">Transformar a Set</button>
+      <button id="btnAMap">Transformar a Map</button>
+      <button id="btnImprimir">Imprimir map</button>
+    </div>
+    <div id="resultado">El resultado aparecerá aquí...</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
